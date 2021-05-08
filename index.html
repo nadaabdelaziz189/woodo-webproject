@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="css/main.css">
+
+    <title>Home</title>
+    <!--   <style>
+         :root {
+            --primary-color: rgb(255, 215, 38);
+            --secondary-color: black;
+            --light-color: white;
+            --dark-color: rgb(231, 224, 224);
+            --testi-color: rgb(110, 110, 110);
+            --mak-width: 1100px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            perspective: 600px;
+        }
+        
+        .container {
+            width: 1100px;
+            margin: 50px auto;
+        }
+        
+        span:not(.trend) {
+            background-color: var(--primary-color);
+            padding: 5px 10px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        header {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(images/banner-bg.png);
+        }
+        
+        .nav {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 9%;
+            padding-right: 1%;
+        }
+        
+        .logo {
+            padding-right: 10%;
+        }
+        
+        .nav ul {
+            list-style: none;
+        }
+        
+        .nav ul li {
+            display: inline-flex;
+        }
+        
+        .nav ul li a,
+        .nav2,
+        .nav3 {
+            text-decoration: none;
+            color: var(--light-color);
+            font-size: 20px;
+            padding-right: 25px;
+        }
+        
+        .nav ul li a:hover {
+            color: var(--secondary-color)
+        }
+        
+        .nav2 i,
+        .nav3 i {
+            font-size: 20px;
+            padding-right: 10px;
+        }
+        
+        .nav2 {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        
+        .nav3 .fa-shopping-bag {
+            padding-left: 60px;
+        }
+        
+        .one-11 {
+            display: flex;
+        }
+        
+        .one-11 .two {
+            padding: 5px;
+            width: 50%;
+            float: left;
+        }
+        
+        .one-11 .two img {
+            width: 100%;
+        }
+        
+        .one-11 .three-3 {
+            padding-left: 150px;
+            width: 50%;
+            float: right;
+        }
+        
+        .three-3 h1 {
+            padding: 40px 0;
+            text-align: left;
+            font-size: 80px;
+            font-weight: bold;
+        }
+        
+        .trend {
+            color: var(--light-color);
+        }
+        
+        .three-3 p {
+            padding-bottom: 15px;
+            color: var(--light-color);
+        }
+        
+        .three-3 a {
+            text-decoration: none;
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            padding: 15px 100px;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .three-3 .fr {
+            color: var(--light-color);
+            background-color: var(--secondary-color);
+        }
+        /* start about */
+        
+        .about-us,
+        .contact-us,
+        footer,
+        .our-furnitures {
+            margin-top: 12%;
+        }
+        
+        .about-us h1,
+        .our-furnitures h1 {
+            text-align: left;
+            padding-bottom: 20px;
+        }
+        
+        .about-us h6,
+        .our-furnitures h6 {
+            padding-bottom: 10px;
+            font-weight: lighter;
+        }
+        
+        .main {
+            height: 600px;
+            background-image: url(images/about-bg.png);
+            background-repeat: no-repeat;
+            background-position-x: -100px;
+            background-position-y: -40px;
+            display: flex;
+            padding-left: 20px;
+            margin-bottom: 100px;
+        }
+        
+        .main p {
+            font-family: ' Tahoma', Geneva, Verdana, sans-serif;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            color: var(--dark-color)
+        }
+        
+        .main a {
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            padding: 13px 33px;
+            font-size: 13px;
+        }
+        
+        .main .two img {
+            width: 350px;
+            height: 600px;
+            margin-left: 30px;
+            overflow-y: visible;
+            margin-top: -95px;
+        }
+        
+        .three img {
+            width: 110px;
+            margin-top: 40px;
+            margin-left: -130px;
+        }
+        /* end  about */
+        
+        .our-furnitures {
+            margin: 50px;
+        }
+        
+        .main-11 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 100px 30px;
+        }
+        
+        .main-11 img {
+            width: 500px;
+        }
+        
+        .our-furnitures div {
+            height: 300px;
+            width: 500px;
+            margin-top: 15px;
+            margin-left: -5px;
+            margin-right: 15px;
+        }
+        
+        .nine {
+            display: flex;
+            background-image: url(images/img-9.png);
+            background-size: cover;
+            background-position: 100px -30px;
+        }
+        
+        .nine a {
+            margin-top: 50%;
+            height: 15%;
+            padding: 10px 50px;
+            margin-right: 30%;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            font-size: 16px;
+        }
+        
+        .nine h3 {
+            margin-left: 15%;
+            margin-top: 35%;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .our-furnitures .ffr {
+            margin-bottom: -140px;
+            margin-left: 30%;
+        }
+        
+        .our-furnitures .main-10 {
+            display: grid;
+            grid-template-columns: 3fr 2fr 1fr;
+            padding-bottom: 10px;
+        }
+        
+        .our-furnitures img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        /* end furnitures */
+        /* start tesstimonial */
+        
+        .main-2 {
+            margin-top: 100px;
+            background-color: var(--testi-color);
+            color: var(--light-color);
+        }
+        
+        .main-2 .one {
+            margin-top: -8%;
+        }
+        
+        .main-2 .one img {
+            width: 320px;
+        }
+        
+        .main-2 .two {
+            padding-left: 120px;
+        }
+        
+        .two p {
+            padding-top: 30px;
+        }
+        
+        .main-2 h1 {
+            padding-top: 50px;
+            text-align: left;
+            font-size: 28px;
+        }
+        /*end tesimonial*/
+        /* start contact-us */
+        
+        .contact-us {
+            width: 100%;
+            padding-left: 10%;
+            padding-top: 5%;
+            margin-top: 100px;
+            background-color: var(--primary-color);
+        }
+        
+        .contact-us h1 {
+            text-align: left;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        .contact-us form {
+            display: inline-block;
+            padding-bottom: 5%;
+        }
+        
+        .contact-us form input {
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            border-radius: 1%;
+            margin-right: 15px;
+            width: 210px;
+            color: var(--dark-color);
+        }
+        
+        .contact-us form i {
+            font-size: 30px;
+            padding-right: 10px;
+            border-radius: 50%;
+            padding-left: 10px;
+        }
+        
+        .contact-us form div {
+            margin-top: 3%;
+            display: inline-flex;
+        }
+        
+        textarea {
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            border-radius: 1%;
+            width: 600px;
+            color: var(--dark-color);
+            margin-right: 25px;
+        }
+        
+        .contact-us form a {
+            display: inline-block;
+            font-size: 25px;
+            text-decoration: none;
+            color: var(--light-color);
+            background-color: var(--secondary-color);
+            padding: 10px 100px;
+        }
+        /* end contact-us */
+        /* start footer */
+        
+        footer {
+            width: 100%;
+            text-align: center;
+        }
+        
+        footer:not(.six) {
+            background-color: rgb(37, 37, 37);
+        }
+        
+        .four ul li {
+            display: inline-block;
+        }
+        
+        .four ul li a {
+            color: var(--light-color);
+            text-decoration: none;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        
+        .four ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .four {
+            padding-bottom: 20px;
+        }
+        
+        .four h1,
+        .five h6 {
+            color: var(--light-color);
+            font-size: 20px;
+            padding-top: 100px;
+            padding-bottom: 10px;
+        }
+        
+        .five {
+            padding-left: 15%;
+            display: flex;
+            padding-bottom: 5%;
+        }
+        
+        .five h1 {
+            padding-left: 10px;
+            font-size: 20px;
+            color: var(--light-color);
+            text-align: left;
+        }
+        
+        .five i {
+            color: var(--light-color);
+            font-size: 20px;
+            display: inline-flex;
+            padding-left: 10px;
+        }
+        
+        .five a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        footer form {
+            display: inline-flex;
+        }
+        
+        footer form a {
+            display: inline-block;
+            font-size: 16px;
+            text-decoration: none;
+            color: var(--light-color);
+            background-color: var(--primary-color);
+            padding: 5px 70px;
+        }
+        
+        footer form input {
+            font-size: 14px;
+            border: none;
+            border-radius: 1%;
+            padding-left: 10px;
+            width: 310px;
+            color: var(--dark-color);
+        }
+        
+        .five ul li {
+            color: var(--light-color);
+            display: inline-block;
+        }
+        
+        .five ul li a {
+            color: var(--light-color);
+            text-decoration: none;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        
+        .five div:first-of-type {
+            padding-right: 60px;
+        }
+        
+        .fa-map-marker-alt:before {
+            padding-right: 10px;
+        }
+        
+        .six {
+            background-color: var(--primary-color);
+            padding: 1% 30%;
+            color: var(--light-color);
+            font-weight: lighter;
+        }
+        /* end footer */
+    </style> -->
+</head>
+
+<body>
+    <!-- start header-->
+    <header>
+        <!-- navbar-->
+        <navbar class="nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <ul class="ul-nav1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="Furnitures.html">Furnitures</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav2">
+                <li><i class="fas fa-user fa-2x"></i><a href="#" style="padding-right: 5px;">Login</a><a href="#"> / Register</a></li>
+            </ul>
+            <ul class="nav3">
+                <i class="fas fa-search fa-2x"></i>
+                <i class="fas fa-shopping-bag fa-2x"></i></ul>
+        </navbar>
+        <!--nav-->
+        <!--showcase-->
+        <div class="one-11">
+            <div class="three-3">
+                <div class="after"><span class="num"><span class="num"></span></div>
+                <h1>2019 <br><span class="trend"> TRENDS</span> <br> FURNITURE</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content <br> of a page when looking at its layout. The point of using Lorem Ipsum is that it has <br> a more-or-less normal distribution of letters,</p>
+                <a href="#">MORE INFO</a> <a href="#" class="fr">FURNITURE</a>
+                <div class="three"><img src="images/img-2.png" alt="img-1"></div>
+                <span class="i-1"><i></i></span><span class="i-1"><i></i></span>
+            </div>
+            <div class="two"><img src="images/img-1.png" alt="img-1"></div>
+        </div>
+    </header>
+    <!-- end header-->
+    <!--start container-->
+    <div class="container">
+        <!-- start main-->
+        <main>
+            <!-- start about-us-->
+            <div class="about-us">
+                <h1>About <span>Us</span> </h1>
+                <h6>making it look like readable English. Many desktop publishing</h6>
+                <div class="main">
+                    <div class="one">
+                        <p>It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout. The point of using Lorem Ipsum is <br> that it has a more-or-less normal distribution o f letters,
+                            a s opposed to using <br>'Content h ere, content here', making it look like readable English. Many desktop <br> publishing packages and web</p>
+                        <a href="About.html">ABOUT MORE</a>
+                    </div>
+                    <div class="two"><img src="images/about-img.png" alt="about-img"></div>
+                </div>
+            </div>
+    </div>
+    <!-- end about-us-->
+    <!-- start our-furnitures-->
+    <div class="our-furnitures">
+        <div class="ffr">
+            <h1>Our <span>Furnitures</span> </h1>
+            <h6>page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</h6>
+        </div>
+        <div class="main-10">
+            <div class="nine">
+                <a href="Furnitures.html">see more</a>
+                <h3>NEW DESIGN</h3>
+            </div>
+            <div class="four4"><img src="images/img-4.png" alt="img-4" style="margin-bottom: 30px;"></div>
+            <div class="five5"><img src="images/img-5.png" alt="img-5" style="width: 330px;  margin-left: 20px;"></div>
+        </div>
+        <div class="main-11" style="margin-top: 60px;">
+            <div><img src="images/img-6.png" alt="img-6"></div>
+            <div><img src="images/img-7.png" alt="img-7"></div>
+            <div><img src="images/img-8.png" alt="img-8"></div>
+        </div>
+    </div>
+
+    </div>
+    <!-- end our-furnitures-->
+    <!-- start testimonial-->
+    <div class="container">
+        <div class="testimonial" style="margin-top: 300px;">
+            <h1>Testi <span>Monial</span></h1>
+            <div class="main-2">
+                <span class="i-2"></span>
+                <div class="one"><img src="images/img-10.png" alt="img-10"></div>
+                <div class="two">
+                    <h1>Helina</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                        using 'Content here, content here', making it look</p>
+                </div><span class="i-2"></span>
+            </div>
+        </div>
+        <!-- end testimonial-->
+        <!-- start contact-us-->
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <!-- start form-->
+            <form>
+                <input type="text" placeholder="Name"> <input type="text" placeholder="Phone Number"> <input type="text" placeholder="Mail">
+                <i class="fab fa-facebook"></i><i class="fab fa-twitter-square"></i><i class="fab fa-linkedin"></i><i class="fab fa-instagram-square"></i>
+                <div> <textarea placeholder="massege"></textarea> <a href="Contact.html">Send</a></div>
+            </form>
+            <!-- end form-->
+        </div>
+        <!-- end contact-us-->
+        </main>
+        <!-- end main -->
+    </div>
+    <!--end container-->
+    <!--start footer-->
+    <footer>
+        <div class="four">
+            <h1>Menus</h1>
+            <ul class="ul-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="Furnitures.html">Furnitures</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="five">
+            <div>
+                <h1>Address</h1>
+                <ul class="ftr">
+                    <li><i class="fas fa-map-marker-alt"></i>Locations</li>
+                    <li><i class="fas fa-phone-volume"></i><a href="tel:+71 89078493 ">+71 89078493</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:freshfood@gmail.com ">demo@gmail.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Newsletter</h1>
+                <form class="footer">
+                    <input type="text" placeholder="Address"><a href="Contact.html">Subscribe</a>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="six">
+            <h6>Copyright 2019 All Right Reserved By. Free html Templates</h6>
+        </div>
+    </footer>
+    <!--end footer-->
+</body>
+
+</html>
